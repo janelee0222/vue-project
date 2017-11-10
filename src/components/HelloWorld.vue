@@ -1,18 +1,27 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>hello</h2>
+    <h2 @click="add">hello {{addVal}}</h2>
   </div>
 </template>
 
 <script>
 var aaa = 'this main'
+
+var add = function () {
+  this.addVal++
+}
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: aaa
+      msg: aaa,
+      addVal: 0
     }
+  },
+  methods: {
+    add: add
   }
 }
 </script>
