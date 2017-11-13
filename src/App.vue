@@ -1,3 +1,5 @@
+<style src="./assets/css/common.css"></style>
+
 <template>
   <div id="app">
     <img src="./assets/logo.png">
