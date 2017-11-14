@@ -16,7 +16,7 @@ var list = {
   favoriteFood: 'all'
 }
 export default {
-  name: 'firstRouteChild',
+  name: 'firstPageChild',
   data () {
     return {
       list: list

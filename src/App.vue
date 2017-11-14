@@ -7,8 +7,8 @@
     <div>
       <ul>
         <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/firstroute/Peter">firstroute</router-link></li>
-        <li><router-link to="/firstroute/Peter/child">firstrouteChild</router-link></li>
+        <li><router-link to="/first/Peter">firstPage</router-link></li>
+        <li><router-link to="/first/Peter/child">firstPageChild</router-link></li>
       </ul>
     </div>
     <router-view/>

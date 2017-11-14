@@ -18,10 +18,10 @@
 
 <script>
 export default {
-  name: 'firstRoute',
+  name: 'firstPage',
   data () {
     return {
-      msg: 'first route',
+      msg: 'first Page',
       color: true
     }
   },

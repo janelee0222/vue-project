@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home/homePage'
-import FirstRoute from '@/components/firstPage/FirstRoute'
-import FirstRouteChild from '@/components/firstPage/child/FirstRouteChild'
+import FirstPage from '@/components/firstPage/firstPage'
+import FirstPageChild from '@/components/firstPage/child/firstPageChild'
 
 Vue.use(Router)
 
@@ -14,13 +14,13 @@ export default new Router({
       component: Home
     },
     {
-      path: '/firstroute/:name',
-      name: 'FirstRoute',
-      component: FirstRoute,
+      path: '/first/:name',
+      name: 'First',
+      component: FirstPage,
       children: [
         {
           path: 'child',
-          component: FirstRouteChild
+          component: FirstPageChild
         }
       ]
     }
