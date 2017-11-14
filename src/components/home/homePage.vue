@@ -6,6 +6,7 @@
     <h1>{{ msg }}</h1>
     <h2 @click="add">hello, click me! {{addVal}}</h2>
     <div>this is computed example (watch up version) : {{fullName}}</div>
+    <!-- 데이터는 그대로 다르게 사용하려면  key="username-input", "email-input" 추가 -->
     <div class="con-wrap">
       <div v-if="loginType === 'username'">
         <label>사용자 이름</label>
