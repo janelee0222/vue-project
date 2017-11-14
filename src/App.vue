@@ -3,6 +3,7 @@
 
 <template>
   <div id="app">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <img src="./assets/logo.png">
     <div>
       <ul>

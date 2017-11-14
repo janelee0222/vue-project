@@ -1,12 +1,14 @@
 <template>
   <div>  
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
     <h1>{{ msg }}</h1>
     Hello {{$route.params.name}}
     <router-view/>
     <div class="container text-center">
         <div class="box" :class="{'red': color, 'blue':!color}"></div>
         <div class="box" :class="[color ? 'purple': 'green']"></div>
+        <!-- 스타일 조건 예제 -->
+        <!-- <div class="box" :class="[{purple:color}, green]"></div> -->
         <div class="box" :class="{'red': color, 'blue':!color}"></div>
         <div class="box" :class="{'purple': color, 'green':!color}"></div>
         <button v-on:click="flipColor" class="btn btn-block btn-success">

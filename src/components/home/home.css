@@ -17,5 +17,14 @@ a {
 }
 
 .hello {
-    color : red;
+    color : navy;
+}
+
+.btn-style {
+    display: block !important;
+    margin: auto !important;
+}
+
+.con-wrap {
+    margin: 50px 0;
 }
