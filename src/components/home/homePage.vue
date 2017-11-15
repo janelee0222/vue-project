@@ -1,5 +1,6 @@
 <script src="./home.js"></script>
 <style src="./home.css"></style>
+<!-- <script src="../unit/todo/todo.js"></script> -->
 
 <template>
   <div class="hello">
@@ -20,5 +21,6 @@
     </div>
     <input v-model.number="num" @keyup.13="calc">
     <div>{{num}}</div>
+    <todo-list :todos="todos"></todo-list>
   </div>
 </template>

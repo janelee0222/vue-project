@@ -25,7 +25,21 @@ export default {
       num: 0,
       firstName: 'Lee',
       lastName: 'Rozie',
-      loginType:'username'
+      loginType:'username',
+      todos: [
+        {
+          id: 1,
+          title: 'Do the dishes',
+        },
+        {
+          id: 2,
+          title: 'Take out the trash',
+        },
+        {
+          id: 3,
+          title: 'Mow the lawn'
+        }
+      ]
     }
   },
   computed: {
