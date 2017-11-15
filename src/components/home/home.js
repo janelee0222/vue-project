@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 var aaa = 'this main'
 
 var add = function () {
@@ -15,6 +17,16 @@ var setFullName = function () {
 var changeMode = function () {
   this.loginType == 'username' ? this.loginType = 'email' : this.loginType = 'username'
 }
+
+Vue.component('coupon', {
+  props : ['code'],
+  template: `<input type="text" :value="code" @input="updateCode($event.target.value)">`,
+  methods: {
+    updateCode(code) {
+      this.$emit('input',code)
+    }
+  }
+})
 
 export default {
   name: 'home',
@@ -39,7 +51,8 @@ export default {
           id: 3,
           title: 'Mow the lawn'
         }
-      ]
+      ],
+      coupon: 'ddddd'
     }
   },
   computed: {

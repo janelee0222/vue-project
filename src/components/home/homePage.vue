@@ -21,6 +21,7 @@
     </div>
     <input v-model.number="num" @keyup.13="calc">
     <div>{{num}}</div>
-    <todo-list :todos="todos"></todo-list>
+    <!-- <todo-list :todos="todos"></todo-list> -->
+    <coupon v-model="coupon"></coupon>
   </div>
 </template>
